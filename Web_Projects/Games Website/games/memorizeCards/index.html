@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <link rel="stylesheet" href="../../css/rester.css" />
+    <link rel="stylesheet" href="../../css/rules.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Memory game</title>
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+
+    <div class="memory-game-blocks">
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Angular.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Angular.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="cat">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Cartoon_Cat.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="cat">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Cartoon_Cat.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="dog">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/cartton dog.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="dog">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/cartton dog.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="monkey">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Cartoon_Monkey.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="monkey">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Cartoon_Monkey.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="html5">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/HTML5-300x300.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="html5">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/HTML5-300x300.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="java">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Java.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="java">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/Java.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="javascript">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/JavaScript.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="javascript">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/JavaScript.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="Python">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/pythoned.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="Python">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/pythoned.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/github_pages-300x300.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/github_pages-300x300.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="css3">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/CSS3-wpcf_300x300.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="css3">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="Images/CSS3-wpcf_300x300.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <audio id ="success" src="Audios/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="Audios/failing.mp3" preload="auto"></audio>
+    <audio id="background-audio" autoplay loop>
+      <source src="Audios/Mii Channel.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+  </audio>
+ <div id="congratulation-message">
+  🎉 Congratulation!, U win the game 
+ </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

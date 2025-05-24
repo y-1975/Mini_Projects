@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/all.min.css" />
+    <link rel="stylesheet" href="../../css/rester.css" />
+    <link rel="stylesheet" href="../../css/rules.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Word Shuffle Game</title>
+  </head>
+  <body>
+    <h1>Word Shuffle Game</h1>
+
+    <p id="shuffledWord"></p>
+
+    <input type="text" id="userInput" placeholder="Guess the word" />
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p class="message" id="message"></p>
+    <p class="message" id="attempts"></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+:root {
+  --color-mint: #00ffd1;
+  --color-blue: #31c6d4;
+  /* --color-yellow: #FFFF00; */
+  --color-yellow: #e7e700;
+  --color-red: #ff1e1e;
+  --main-transition: 0.5s;
+}
+body {
+  height: 100vh;
+  position: relative;
+}
+.welcome {
+  margin: 0;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+.welcome i {
+  transform: rotate(-5deg);
+}
+.container .holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .container .holder {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+.container .holder .box {
+  position: relative;
+}
+.container .holder .box .game {
+  overflow: hidden;
+  background-color: white;
+  padding: 4px 8px;
+  font-size: 30px;
+  font-weight: bold;
+  height: 250px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--main-transition);
+  position: relative;
+  z-index: 2010;
+}
+@media (max-width: 768px) {
+  .container .holder .box .game {
+    font-size: 20px;
+  }
+}
+.container .holder .box .game .overlay {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  z-index: 2020;
+  transform: translate(-50%, -50%);
+  transition: var(--main-transition);
+}
+.container .holder .box .game span {
+  position: relative;
+  z-index: 2030;
+}
+.container .holder .box .game span.red {
+  color: var(--color-red);
+}
+.container .holder .box .game span.yellow {
+  color: var(--color-yellow);
+}
+.container .holder .box .game span.blue {
+  color: var(--color-blue);
+}
+.container .holder .box .game span.mint {
+  color: var(--color-mint);
+}
+.container .holder .box > span {
+  margin-left: 15px;
+  position: absolute;
+  bottom: 5px;
+  z-index: 1000;
+  transition: var(--main-transition);
+}
+.container .holder .box .game:hover + span {
+  bottom: -30px;
+}
+.container .holder .box .game:hover span {
+  color: white;
+}
+.container .holder .box .game:hover .overlay {
+  width: 100%;
+  height: 100%;
+}
+.container .holder .box .game:hover .overlay.red {
+  background-color: var(--color-red);
+}
+.container .holder .box .game:hover .overlay.yellow {
+  background-color: var(--color-yellow);
+}
+.container .holder .box .game:hover .overlay.blue {
+  background-color: var(--color-blue);
+}
+.container .holder .box .game:hover .overlay.mint {
+  background-color: var(--color-mint);
+}

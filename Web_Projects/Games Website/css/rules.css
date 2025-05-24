@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  /*  font style to make a stander style */
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 991px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
