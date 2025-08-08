@@ -19,6 +19,7 @@ This repository contains a collection of small personal and college mini-project
 
 ## 💡 Purpose
 
-These projects were built either as practice mini-projects or as college tasks to improve hands-on development skills.
+These projects were built either as practice mini-projects or as college tasks to improve hands-on development skills. 
+/////////////////////////////////////////////
 
 ---
